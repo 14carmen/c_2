@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a2e;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.heart {
+  font-size: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.heart:hover {
+  transform: scale(1.1);
+}
+
+#click-text {
+  font-size: 20px;
+  color: white;
+  margin-top: 10px;
+}
+
+#love-message {
+  display: none;
+  font-size: 40px;
+  color: #ff4d6d;
+  margin-top: 20px;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .heart {
+    font-size: 80px;
+  }
+  #click-text {
+    font-size: 18px;
+  }
+  #love-message {
+    font-size: 32px;
+  }
+}
